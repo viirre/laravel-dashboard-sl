@@ -1,4 +1,4 @@
-# A short description of the tile
+# Tile for Stockholm public transport
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/robbens/laravel-dashboard-sl.svg?style=flat-square)](https://packagist.org/packages/robbens/laravel-dashboard-sl)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/robbens/laravel-dashboard-sl/run-tests?label=tests)](https://github.com/robbens/laravel-dashboard-sl/actions?query=workflow%3Arun-tests+branch%3Amaster)
