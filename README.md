@@ -35,6 +35,51 @@ protected function schedule(Schedule $schedule)
 }
 ```
 
+Configure dashboard.php
+
+```php
+[
+    'tiles' => [
+        'sl' => [
+            /**
+             * API key to SL Real-time information 4
+             *
+             * @link https://www.trafiklab.se/api/sl-realtidsinformation-4
+             */
+            'api_key' => env('TRAFIKLAB_KEY'),
+
+            /**
+             * ID for the place for which the departures are to be collected, eg 9192 for Slussen.
+             * This ID can be found using the "SL Location Lookup Console".
+             *
+             * @link https://www.trafiklab.se/api/sl-platsuppslag/konsol
+             */
+            'site_id' => 1079,
+
+            /**
+             * Optional label to show on the top of the tile.
+             */
+            'site_label' => 'Odenplan',
+
+            /**
+             * Get departures within the desired time window. Where the
+             * time window is the number of minutes from now. Max 60.
+             */
+            'time_window' => 60,
+
+            /**
+             * Transport modes limit.
+             */
+            'transport_modes' => [
+                'buses' => 2,
+                'metros' => 4,
+                'trains' => false,
+            ]
+        ], 
+    ]   
+]
+```
+
 ## Testing
 
 ``` bash
