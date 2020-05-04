@@ -1,4 +1,4 @@
-# Tile for Stockholm public transport
+# Tile for Stockholm's public transport
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/robbens/laravel-dashboard-sl.svg?style=flat-square)](https://packagist.org/packages/robbens/laravel-dashboard-sl)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/robbens/laravel-dashboard-sl/run-tests?label=tests)](https://github.com/robbens/laravel-dashboard-sl/actions?query=workflow%3Arun-tests+branch%3Amaster)
@@ -6,7 +6,7 @@
 
 A friendly explanation of what your tile does.
 
-A tile for [Laravel Dashboard](https://docs.spatie.be/laravel-dashboard) that shows real time public transport data from [SL](https://sl.se).
+A tile for [Laravel Dashboard](https://docs.spatie.be/laravel-dashboard) that shows real time public transport data from [Stockholms Lokaltrafik](https://sl.se).
 
 ## Installation
 
@@ -26,16 +26,7 @@ In your dashboard view you use the `livewire:sl-tile` component.
 </x-dashboard>
 ```
 
-Schedule the command in `app/Console/Kernel.php`.
-
-```php
-protected function schedule(Schedule $schedule)
-{
-    $schedule->command(Robbens\SlTile\FetchDataFromSLApiCommand::class)->everyMinute();
-}
-```
-
-Configure dashboard.php
+Configure `config/dashboard.php`
 
 ```php
 [
@@ -78,6 +69,15 @@ Configure dashboard.php
         ], 
     ]   
 ]
+```
+
+Schedule the command in `app/Console/Kernel.php`.
+
+```php
+protected function schedule(Schedule $schedule)
+{
+    $schedule->command(Robbens\SlTile\FetchDataFromSLApiCommand::class)->everyMinute();
+}
 ```
 
 ## Testing
