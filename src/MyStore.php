@@ -16,7 +16,7 @@ class MyStore
 
     public function __construct()
     {
-        $this->tile = Tile::firstOrCreateForName("slTile");
+        $this->tile = Tile::firstOrCreateForName('slTile');
     }
 
     public function setData(array $data): self
@@ -31,7 +31,7 @@ class MyStore
         return collect($this->tile->getData('realtimedeparturesV4'))
             ->mapWithKeys(function ($value, $key) {
                 $defaultLimit = 5;
-                $configLimit = config('dashboard.tiles.sl.transport_modes.' . $key);
+                $configLimit = config('dashboard.tiles.sl.transport_modes.'.$key);
                 $limit = $configLimit === false ? 0 : ($configLimit ?? $defaultLimit);
 
                 return [$key => collect($value)->take($limit)];

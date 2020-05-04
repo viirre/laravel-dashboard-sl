@@ -16,10 +16,10 @@ class SlTileServiceProvider extends ServiceProvider
         }
 
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/dashboard-sl-tile'),
+            __DIR__.'/../resources/views' => resource_path('views/vendor/dashboard-sl-tile'),
         ], 'dashboard-sl-tile-views');
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dashboard-sl-tile');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'dashboard-sl-tile');
 
         Livewire::component('sl-tile', SlTileComponent::class);
     }
