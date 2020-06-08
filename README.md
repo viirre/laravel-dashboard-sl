@@ -4,9 +4,9 @@
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/robbens/laravel-dashboard-sl/run-tests?label=tests)](https://github.com/robbens/laravel-dashboard-sl/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/robbens/laravel-dashboard-sl.svg?style=flat-square)](https://packagist.org/packages/robbens/laravel-dashboard-sl)
 
-A friendly explanation of what your tile does.
-
 A tile for [Laravel Dashboard](https://docs.spatie.be/laravel-dashboard) that shows real time public transport data from [Stockholms Lokaltrafik](https://sl.se).
+
+![img](docs/sl-tile.png)
 
 ## Installation
 
