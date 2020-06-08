@@ -18,7 +18,7 @@ class SlTileComponent extends Component
     {
         return view('dashboard-sl-tile::tile', [
             'title' => config('dashboard.tiles.sl.site_label'),
-            'data' => MyStore::make()->getData(),
+            'data' => SlStore::make()->getData(),
         ]);
     }
 }

@@ -5,7 +5,7 @@ namespace Robbens\SlTile;
 use Illuminate\Support\Collection;
 use Spatie\Dashboard\Models\Tile;
 
-class MyStore
+class SlStore
 {
     private Tile $tile;
 

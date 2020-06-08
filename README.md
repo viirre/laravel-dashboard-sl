@@ -30,6 +30,7 @@ Configure `config/dashboard.php`
 
 ```php
 [
+    // ...
     'tiles' => [
         'sl' => [
             /**

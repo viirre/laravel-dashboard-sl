@@ -29,7 +29,7 @@ class FetchDataFromSLApiCommand extends Command
             'trains' => $response['Trains'],
         ];
 
-        MyStore::make()->setData($data);
+        SlStore::make()->setData($data);
 
         $this->info('All done!');
     }
